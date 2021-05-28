@@ -1,0 +1,69 @@
+{
+  "output_root": "/media/xingtong/S.E. Data Backup/3D_Evaluation/kitti_mismatch",
+  "num_workers": 4,
+  "trained_model_path": "/media/xingtong/S.E. Data Backup/3DPublicDataset/KITTI/pre_pool_mpn_scale_vary/eval_pre_pool_mpn_kitti_lg_3_paper.pt",
+  "max_sampling_trial": 10,
+  "oversampling_factor": 2.0,
+  "use_scale": false,
+  "same_scale": null,
+  "min_scale": null,
+  "max_scale": null,
+  "use_rotation": false,
+  "rotation_range": null,
+  "overwrite_result": false,
+  "allow_repeat_sampling": true,
+  "test_type": "scale_vary",
+  "positive_pair_search_voxel_size_multiplier": 1.5,
+  "kitti_root": "/media/xingtong/Seagate Backup Plus Drive/kitti",
+  "kitti_max_time_diff": 3,
+  "inlier_dist_threshold_factor": 2.0,
+  "num_rand_keypoints": 2000,
+  "min_dist": 10,
+  "voxel_size": null,
+  "voxel_size_pair_list": [
+    [
+      0.15,
+      0.15
+    ],
+    [
+      0.15,
+      0.225
+    ],
+    [
+      0.15,
+      0.3
+    ],
+    [
+      0.15,
+      0.375
+    ],
+    [
+      0.15,
+      0.45
+    ],
+    [
+      0.15,
+      0.525
+    ],
+    [
+      0.15,
+      0.6
+    ],
+    [
+      0.15,
+      0.675
+    ],
+    [
+      0.15,
+      0.75
+    ]
+  ],
+  "inlier_ratio_thresholds": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "device": "cuda:0",
+  "net_norm_type": "bnhn",
+  "net_upsample_type": "pool"
+}

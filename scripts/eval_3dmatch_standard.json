@@ -1,0 +1,23 @@
+{
+  "source_root": "/media/xingtong/S.E. Data Backup/3DPublicDataset/3DMatch/test_point_cloud",
+  "output_root": "/media/xingtong/S.E. Data Backup/3D_Evaluation/3dmatch_standard",
+  "trained_model_path": "/media/xingtong/S.E. Data Backup/3DPublicDataset/3DMatch/pre_transpose_pre_transpose_mpn_pc_fixed_scale_2_paper/checkpoint_model_epoch_35_loss_5.253_dist_0.321_fm_recall_0.527_0.980_0.940_0.920_0.800_pm_0.163_paper.pt",
+  "voxel_size_list": [
+    0.05
+  ],
+  "num_rand_keypoints": 2000,
+  "inlier_ratio_thresholds": [
+    0.05,
+    0.1,
+    0.2,
+    0.3
+  ],
+  "inlier_dist_thresh": 0.1,
+  "default_voxel_size": 0.05,
+  "vary_scale": false,
+  "overwrite_result": false,
+  "device": "cuda:0",
+  "net_norm_type": "bnhn",
+  "net_upsample_type": "transpose"
+}
+

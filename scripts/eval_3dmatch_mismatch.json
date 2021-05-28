@@ -1,0 +1,38 @@
+{
+  "source_root": "/media/xingtong/S.E. Data Backup/3DPublicDataset/3DMatch/test_mesh",
+  "output_root": "/media/xingtong/S.E. Data Backup/3D_Evaluation/3dmatch_mismatch",
+  "trained_model_path": "/media/xingtong/S.E. Data Backup/3DPublicDataset/3DMatch/pre_pool_mpn_lg_batch_process_paper/checkpoint_model_2_paper.pt",
+  "voxel_size_list": [
+    0.03,
+    0.03,
+    0.03,
+    0.045,
+    0.03,
+    0.06,
+    0.03,
+    0.075,
+    0.03,
+    0.09,
+    0.03,
+    0.105,
+    0.03,
+    0.12,
+    0.03,
+    0.135,
+    0.03,
+    0.15
+  ],
+  "num_rand_keypoints": 2000,
+  "inlier_ratio_thresholds": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "inlier_dist_thresh": 0.1,
+  "default_voxel_size": 0.05,
+  "vary_scale": true,
+  "overwrite_result": false,
+  "device": "cuda:0",
+  "net_norm_type": "bnhn",
+  "net_upsample_type": "pool"
+}

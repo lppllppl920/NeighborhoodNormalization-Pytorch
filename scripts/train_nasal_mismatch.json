@@ -1,0 +1,61 @@
+{
+  "log_root": "/media/xingtong/S.E. Data Backup/Train",
+  "atlas_mode_weights_path": "/media/xingtong/S.E. Data Backup/nasal/PCAResults/pca_results.pkl",
+  "mean_mesh_model_path": "/media/xingtong/S.E. Data Backup/nasal/PCAResults/mean_mesh_template.ply",
+  "partial_mean_mesh_model_path": "/media/xingtong/S.E. Data Backup/nasal/PCAResults/mean_mesh_template_nasal_right.ply",
+  "num_workers": 6,
+  "num_epochs": 4000,
+  "partial_load": false,
+  "load_trained_weights": true,
+  "trained_model_path": "/media/xingtong/S.E. Data Backup/3DPublicDataset/Nasal/pre_pool_mpn_batch_process/eval_pre_pool_mpn_nasal_lg_2_paper.pt",
+  "val_freq": 1,
+  "train_sampling_size": 10,
+  "val_sampling_size": 100,
+  "train_num_iter": 1000,
+  "val_num_iter": 100,
+  "subdivide_factor": 2.0,
+  "train_batch_size": 4,
+  "max_sampling_trial": 20,
+  "rr_scale": 20.0,
+  "oversampling_factor": 2.0,
+  "loss_weight": 1.0,
+  "phase": "train",
+  "continue_train": false,
+  "vis_mesh": true,
+  "vis_mesh_freq": 20,
+  "val_only": true,
+  "logging_mode": "info",
+  "device": "cuda:0",
+  "net_norm_type": "bnhn",
+  "net_upsample_type": "pool",
+  "train_atlas_mode_weights_range": [
+    0.0,
+    2.5
+  ],
+  "val_atlas_mode_weights_range": [
+    2.5,
+    3.0
+  ],
+  "atlas_mode_range": [
+    0,
+    10
+  ],
+  "use_rotation": true,
+  "rotate_range": 360.0,
+  "use_remesh": true,
+  "default_edge_length": 4.0,
+  "edge_length_range": [
+    2.0,
+    20.0
+  ],
+  "use_crop": true,
+  "crop_ratio_range": [
+    0.5,
+    1.0
+  ],
+  "lr_range": [
+    0.0001,
+    0.0007
+  ],
+  "att_init_value": 0
+}

@@ -1,0 +1,51 @@
+{
+  "log_root": "/media/xingtong/S.E. Data Backup/3D_Train",
+  "data_root": "/media/xingtong/Javad-SSD/tsdf_3dmatch_output",
+  "num_workers": 6,
+  "max_num_epochs": 4000,
+  "partial_load": false,
+  "load_trained_weights": true,
+  "trained_model_path": "/media/xingtong/S.E. Data Backup/3DPublicDataset/3DMatch/pre_pool_pn_lg_batch_process_paper/checkpoint_model_epoch_319_loss_7.430_dist_0.722_fm_recall_0.162_0.560_0.380_0.300_0.240_pm_0.039_paper.pt",
+  "val_freq": 1,
+  "train_sampling_size": 10,
+  "val_sampling_size": 100,
+  "residual_threshold": 0.05,
+  "train_num_iter": 1000,
+  "val_num_iter": 100,
+  "subdivide_factor": 3.0,
+  "train_batch_size": 4,
+  "max_sampling_trial": 20,
+  "rr_scale": 20.0,
+  "oversampling_factor": 2.0,
+  "loss_weight": 1.0,
+  "val_only": false,
+  "allow_repeat_sampling": true,
+  "overlap_ratio_threshold": 0.3,
+  "logging_mode": "info",
+  "continue_train": false,
+  "vis_mesh": true,
+  "vis_mesh_freq": 20,
+  "device": "cuda:0",
+  "net_norm_type": "nhn",
+  "net_upsample_type": "pool",
+  "use_rotation": true,
+  "rotate_range": 360.0,
+  "use_remesh": true,
+  "edge_length_range": [
+    0.03,
+    0.3
+  ],
+  "default_edge_length": 0.05,
+  "use_crop": false,
+  "crop_ratio_range": [
+    0.5,
+    1.0
+  ],
+  "use_scale": false,
+  "scale_range": null,
+  "lr_range": [
+    0.0001,
+    0.0007
+  ],
+  "att_init_value": 0
+}
