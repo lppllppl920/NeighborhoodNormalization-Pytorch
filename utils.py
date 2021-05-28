@@ -469,100 +469,12 @@ def pdist(A, B, dist_type='L2'):
         raise NotImplementedError('Not implemented')
 
 
-def from_graph_data_list(data_list, follow_batch=[]):
-    r"""Constructs a batch object from a python list holding
-    :class:`torch_geometric.data.Data` objects.
-    The assignment vector :obj:`batch` is created on the fly."""
-
-    # XL: Assuming there are two samples in a single iteration in each of the data in mini-batch
-    # XL: data_list is a list of mini-batch sample pairs
-    batch_0 = _batch_processing(data_list, 0, follow_batch)
-    batch_1 = _batch_processing(data_list, 1, follow_batch)
-
-    return batch_0, batch_1
-
-
 def __cumsum__(key, value):
     return bool(re.search('(index|face)', key))
 
 
 def __cat_dim__(key, value):
     return -1 if bool(re.search('(index|face)', key)) else 0
-
-
-def _batch_processing(data_list, idx, follow_batch):
-    keys = [set(data[idx].keys) for data in data_list]
-    keys = list(set.union(*keys))
-    assert 'batch' not in keys
-
-    batch = dataset.Batch()
-
-    for key in keys:
-        batch[key] = []
-    for key in follow_batch:
-        batch['{}_batch'.format(key)] = []
-    batch.batch = []
-    cumsum = 0
-
-    hierarchy_cumsum = [0 for _ in range(len(data_list[0][idx].num_vertices))]
-    valid_cumsum = 0
-
-    for i, data in enumerate(data_list):
-        data = data[idx]
-        num_nodes = data.num_nodes
-        batch.batch.append(torch.full((num_nodes,), i, dtype=torch.long))
-        for key in data.keys:
-            item = data[key]
-
-            if 'hierarchy' in key:
-                # TODO: XL: this assumes the number of levels should not exceed 9
-                level = int(key[-1]) - 1
-                item = item + hierarchy_cumsum[level] if __cumsum__(key, item) else item
-            elif 'quantized_pos' in key:
-                item = torch.cat([(i * torch.ones(item.shape[0], 1)).int(), item], dim=1)
-            elif key.startswith('original_index'):
-                if type(item) != list:
-                    item = item + valid_cumsum if __cumsum__(key, item) else item
-                else:
-                    item[0] = item[0] + valid_cumsum if __cumsum__(key, item[0]) else item[0]
-                    for i in range(1, len(item)):
-                        item[i] = item[i] + hierarchy_cumsum[i - 1] if __cumsum__(key, item[i]) else item[i]
-            elif key.startswith('full_mesh_index_recover'):
-                pass
-            elif key.startswith('full_mesh_labels'):
-                pass
-            else:
-                item = item + cumsum if __cumsum__(key, item) else item
-
-            batch[key].append(item)
-
-        for key in follow_batch:
-            size = data[key].size(__cat_dim__(key, data[key]))
-            item = torch.full((size,), i, dtype=torch.long)
-            batch['{}_batch'.format(key)].append(item)
-
-        cumsum += num_nodes
-
-        for i in range(len(data.num_vertices)):
-            hierarchy_cumsum[i] += data.num_vertices[i]
-
-        valid_cumsum += num_nodes
-
-    for key in keys:
-        item = batch[key][0]
-        if key.startswith('full_mesh_index_recover'):
-            pass
-        elif key.startswith('full_mesh_labels'):
-            pass
-        elif torch.is_tensor(item):
-            batch[key] = torch.cat(
-                batch[key], dim=__cat_dim__(key, item))
-        elif isinstance(item, int) or isinstance(item, float):
-            batch[key] = torch.tensor(batch[key])
-        else:
-            pass
-    batch.batch = torch.cat(batch.batch, dim=-1)
-    return batch.contiguous()
 
 
 def clear_folder(folder: str):
