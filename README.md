@@ -13,7 +13,7 @@ In ***2021 Conference on Computer Vision and Pattern Recognition (CVPR)***
 Please contact [**Xingtong Liu**](https://www.linkedin.com/in/xingtong-liu-b43b27131/) (xingtongliu@jhu.edu) or [**Mathias Unberath**](https://www.cs.jhu.edu/faculty/mathias-unberath/) (unberath@jhu.edu) if you have any questions.
 
 ## Dependencies
-[MinkowskiEngine](https://github.com/NVIDIA/MinkowskiEngine)(0.5.4 tested), [PyTorch](https://pytorch.org/get-started/locally/)(1.7.1 tested), [open3d](http://www.open3d.org/docs/0.9.0/getting_started.html#installing-from-pypi-or-conda)(0.9.0.0 tested), [pyvista](https://docs.pyvista.org/), [pyacvd](https://github.com/pyvista/pyacvd), [tensorboardX](https://github.com/lanpa/tensorboardX), [MulticoreTSNE](https://github.com/DmitryUlyanov/Multicore-TSNE), [umap-learn](https://umap-learn.readthedocs.io/en/latest/), [torch-geometric](https://github.com/rusty1s/pytorch_geometric), pycuda, scikit-image, scikit-learn, opencv-python, scipy, psutil, tqdm, pathlib, numpy
+[MinkowskiEngine](https://github.com/NVIDIA/MinkowskiEngine)(0.5.4 tested), [PyTorch](https://pytorch.org/get-started/locally/)(1.7.1 tested), [open3d](http://www.open3d.org/docs/0.9.0/getting_started.html#installing-from-pypi-or-conda)(0.9.0 tested), [pyvista](https://docs.pyvista.org/), [pyacvd](https://github.com/pyvista/pyacvd), [tensorboardX](https://github.com/lanpa/tensorboardX), [MulticoreTSNE](https://github.com/DmitryUlyanov/Multicore-TSNE), [umap-learn](https://umap-learn.readthedocs.io/en/latest/), [torch-geometric](https://github.com/rusty1s/pytorch_geometric), pycuda, scikit-image, scikit-learn, opencv-python, scipy, psutil, tqdm, pathlib, numpy
 
 ## Datasets
 
