@@ -74,7 +74,7 @@ Please contact [**Xingtong Liu**](https://www.linkedin.com/in/xingtong-liu-b43b2
 
 ## Evaluation
 
-1. ```evaluation/evaluation_3dmatch.py``` is to evaluate Feature Match Rate (FMR) on the 3DMatch dataset. One example to
+1. ```evaluation/evaluation_3dmatch.py``` is to evaluate Feature Match Recall (FMR) on the 3DMatch dataset. One example to
    run this script is ```/path/to/python /path/to/evaluation_3dmatch.py --config_path /path/to/config/file```. Example
    config files for the standard and resolution mismatch benchmarks are ```eval_3dmatch_standard.json```
    amd ```eval_3dmatch_mismatch.json```, respectively.
