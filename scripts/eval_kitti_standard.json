@@ -1,7 +1,8 @@
 {
-  "output_root": "/media/xingtong/S.E. Data Backup/3D_Evaluation/kitti_standard",
-  "num_workers": 0,
-  "trained_model_path": "/media/xingtong/S.E. Data Backup/3DPublicDataset/KITTI/pre_pool_mpn_fixed_scale/eval_pre_pool_mpn_kitti_fixed_paper.pt",
+  "output_root": "/path/to/evaluation/output/folder",
+  "kitti_root": "/path/to/kitti/dataset/root",
+  "num_workers": 4,
+  "trained_model_path": "/path/to/trained/model",
   "max_sampling_trial": 10,
   "oversampling_factor": 2.0,
   "use_scale": false,
@@ -17,7 +18,6 @@
     0.2,
     0.3
   ],
-  "kitti_root": "/media/xingtong/Seagate Backup Plus Drive/kitti",
   "kitti_max_time_diff": 3,
   "test_type": "fixed_scale",
   "eval_type": "fmr",

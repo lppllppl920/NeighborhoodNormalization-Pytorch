@@ -426,18 +426,6 @@ class KITTINMPairDataset(KITTIPairDataset):
                  manual_seed=False,
                  config=None):
 
-        # self.is_odometry = is_odometry
-        # if self.is_odometry:
-        #     self.root = root = os.path.join(config.kitti_root, 'dataset')
-        #     use_rotation = use_rotation
-        #     use_scale = use_scale
-        # else:
-        #     self.date = config.kitti_date
-        #     self.root = root = os.path.join(config.kitti_root, self.date)
-        #
-        # self.icp_path = os.path.join(config.kitti_root, 'icp')
-        # pathlib.Path(self.icp_path).mkdir(parents=True, exist_ok=True)
-
         KITTIPairDataset.__init__(self, phase, transform, use_rotation, use_scale, is_odometry,
                                   manual_seed, config)
         logging.info(f"Loading the subset {phase} from {self.root}")

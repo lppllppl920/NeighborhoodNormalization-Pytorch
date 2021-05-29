@@ -1,6 +1,6 @@
 {
-  "source_root": "/media/xingtong/S.E. Data Backup/3DPublicDataset/3DMatch/test_mesh",
-  "output_root": "/media/xingtong/S.E. Data Backup/3D_Evaluation/3dmatch_mismatch",
+  "output_root": "/path/to/evaluation/output/folder",
+  "source_root": "/path/to/3dmatch/mismatch/test/dataset",
   "trained_model_path": "/media/xingtong/S.E. Data Backup/3DPublicDataset/3DMatch/pre_pool_mpn_lg_batch_process_paper/checkpoint_model_2_paper.pt",
   "voxel_size_list": [
     0.03,

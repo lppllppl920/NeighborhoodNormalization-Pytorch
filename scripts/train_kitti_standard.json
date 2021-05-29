@@ -1,11 +1,11 @@
 {
-  "log_root": "/media/xingtong/S.E. Data Backup/3D_Train",
-  "kitti_root": "/media/xingtong/Seagate Backup Plus Drive/kitti",
+  "log_root": "/path/to/logging/root",
+  "kitti_root": "/path/to/kitti/dataset/root",
   "num_workers": 4,
   "max_num_epochs": 4000,
   "partial_load": false,
   "load_trained_weights": true,
-  "trained_model_path": "/media/xingtong/S.E. Data Backup/3DPublicDataset/KITTI/pre_pool_mpn_fixed_scale/eval_pre_pool_mpn_kitti_fixed_paper.pt",
+  "trained_model_path": "/path/to/trained/model",
   "lr_range": [
     0.0001,
     0.0007

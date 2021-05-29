@@ -1,7 +1,8 @@
 {
-  "output_root": "/media/xingtong/S.E. Data Backup/3D_Evaluation/kitti_mismatch",
+  "output_root": "/path/to/evaluation/output/folder",
+  "kitti_root": "/path/to/kitti/dataset/root",
   "num_workers": 4,
-  "trained_model_path": "/media/xingtong/S.E. Data Backup/3DPublicDataset/KITTI/pre_pool_mpn_scale_vary/eval_pre_pool_mpn_kitti_lg_3_paper.pt",
+  "trained_model_path": "/path/to/trained/model",
   "max_sampling_trial": 10,
   "oversampling_factor": 2.0,
   "use_scale": false,
@@ -14,7 +15,6 @@
   "allow_repeat_sampling": true,
   "test_type": "scale_vary",
   "positive_pair_search_voxel_size_multiplier": 1.5,
-  "kitti_root": "/media/xingtong/Seagate Backup Plus Drive/kitti",
   "kitti_max_time_diff": 3,
   "inlier_dist_threshold_factor": 2.0,
   "num_rand_keypoints": 2000,

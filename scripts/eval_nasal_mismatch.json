@@ -1,6 +1,6 @@
 {
-  "output_root": "/media/xingtong/S.E. Data Backup/3D_Evaluation/nasal_mismatch",
-  "trained_model_path": "/media/xingtong/S.E. Data Backup/3DPublicDataset/Nasal/pre_pool_mpn_batch_process/eval_pre_pool_mpn_nasal_lg_2_paper.pt",
+  "output_root": "/path/to/evaluation/output/folder",
+  "trained_model_path": "/path/to/trained/model",
   "voxel_size_pair_list": [
     [
       2.0,
@@ -50,9 +50,9 @@
   "default_voxel_size": 2.0,
   "vary_scale": true,
   "overwrite_result": false,
-  "atlas_mode_weights_path": "/media/xingtong/S.E. Data Backup/nasal/PCAResults/pca_results.pkl",
-  "mean_mesh_model_path": "/media/xingtong/S.E. Data Backup/nasal/PCAResults/mean_mesh_template.ply",
-  "partial_mean_mesh_model_path": "/media/xingtong/S.E. Data Backup/nasal/PCAResults/mean_mesh_template_nasal_right.ply",
+  "atlas_mode_weights_path": "/path/to/nasal/dataset/pca_results.pkl",
+  "mean_mesh_model_path": "/path/to/nasal/dataset/mean_mesh_template.ply",
+  "partial_mean_mesh_model_path": "/path/to/nasal/dataset/mean_mesh_template_nasal_right.ply",
   "num_run_per_size_pair": 1000,
   "atlas_mode_weights_std_range": [
     -3.0,
