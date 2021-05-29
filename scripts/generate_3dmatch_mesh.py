@@ -1,14 +1,9 @@
 from pathlib import Path
 from skimage import measure
 import numpy as np
-import sys
 import argparse
-
-# if '/opt/ros/kinetic/lib/python2.7/dist-packages' in sys.path:
-#     sys.path.remove('/opt/ros/kinetic/lib/python2.7/dist-packages')
-import cv2
-
 import tqdm
+import cv2
 import open3d as o3d
 import gc
 
