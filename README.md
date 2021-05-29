@@ -10,7 +10,8 @@ Xingtong Liu*, Benjamin Killeen*, Ayushi Sinha, Masaru Ishii, Gregory D. Hager, 
 
 In ***2021 Conference on Computer Vision and Pattern Recognition (CVPR)***
 
-Please contact [**Xingtong Liu**](https://www.linkedin.com/in/xingtong-liu-b43b27131/) (xingtongliu@jhu.edu) or [**Mathias Unberath**](https://www.cs.jhu.edu/faculty/mathias-unberath/) (unberath@jhu.edu) if you have any questions.
+Please contact [**Xingtong Liu**](https://www.linkedin.com/in/xingtong-liu-b43b27131/) (xingtongliu@jhu.edu) or [**
+Mathias Unberath**](https://www.cs.jhu.edu/faculty/mathias-unberath/) (unberath@jhu.edu) if you have any questions.
 
 ## Dependencies
 
@@ -44,8 +45,8 @@ Please contact [**Xingtong Liu**](https://www.linkedin.com/in/xingtong-liu-b43b2
 
 ### Nasal Cavity
 
-1. Download dataset for network
-   training [here](https://livejohnshopkins-my.sharepoint.com/:f:/g/personal/xliu89_jh_edu/EiwCvDb4CP9Fo_RjVnHszbwBFOjmnzMeZbfZMVxzHxBOUw?e=f6C8F2)
+1. Download dataset for network training and
+   evluation [here](https://livejohnshopkins-my.sharepoint.com/:f:/g/personal/xliu89_jh_edu/EiwCvDb4CP9Fo_RjVnHszbwBFOjmnzMeZbfZMVxzHxBOUw?e=f6C8F2)
    . Data inside ```low_resolution``` folder is used for computation efficiency reason.
 2. The 52 head CT scans from several public datasets and the corresponding statistical shape models are
    provided [here](https://livejohnshopkins-my.sharepoint.com/:f:/g/personal/xliu89_jh_edu/EtlYc_XbGzdBqYb94nxzLfgBAwrE-25R30ySj_LhB4H-mA?e=Ke0MQG)
@@ -111,10 +112,13 @@ Here we present feature embeddings of several sample pairs from the three datase
 are reduced to 3-dimension for color display using UMAP.
 
 ### 3DMatch
+
 ![](pictures/3dmatch_feature.png)
 
 ### KITTI
+
 ![](pictures/kitti_feature.png)
 
 ### Nasal Cavity
+
 ![](pictures/nasal_feature.png)
