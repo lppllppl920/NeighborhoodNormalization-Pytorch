@@ -6,7 +6,7 @@ This codebase implements the method described in the paper:
 
 ***Neighborhood Normalization for Robust Geometric Feature Learning***
 
-Xingtong Liu*, Benjamin Killeen*, Ayushi Sinha, Masaru Ishii, Gregory D. Hager, Russell H. Taylor, Mathias Unberath
+Xingtong Liu*, Benjamin D. Killeen*, Ayushi Sinha, Masaru Ishii, Gregory D. Hager, Russell H. Taylor, Mathias Unberath
 
 In ***2021 Conference on Computer Vision and Pattern Recognition (CVPR)***
 
