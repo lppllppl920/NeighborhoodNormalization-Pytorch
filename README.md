@@ -10,8 +10,7 @@ Xingtong Liu*, Benjamin Killeen*, Ayushi Sinha, Masaru Ishii, Gregory D. Hager, 
 
 In ***2021 Conference on Computer Vision and Pattern Recognition (CVPR)***
 
-Please contact [**Xingtong Liu**](https://www.linkedin.com/in/xingtong-liu-b43b27131/) (xingtongliu@jhu.edu) or [**
-Mathias Unberath**](https://www.cs.jhu.edu/faculty/mathias-unberath/) (unberath@jhu.edu) if you have any questions.
+Please contact [**Xingtong Liu**](https://www.linkedin.com/in/xingtong-liu-b43b27131/) (xingtongliu@jhu.edu) or [**Mathias Unberath**](https://www.cs.jhu.edu/faculty/mathias-unberath/) (unberath@jhu.edu) if you have any questions.
 
 ## Dependencies
 
