@@ -120,3 +120,10 @@ are reduced to 3-dimension for color display using UMAP.
 ### Nasal Cavity
 
 ![](pictures/nasal_feature.png)
+
+## Related Projects
+[Reconstructing Sinus Anatomy from Endoscopic Video -- Towards a Radiation-free Approach for Quantitative Longitudinal Assessment (MICCAI 2020)](https://github.com/lppllppl920/DenseReconstruction-Pytorch)
+
+[Extremely Dense Point Correspondences using a Learned Feature Descriptor (CVPR 2020)](https://github.com/lppllppl920/DenseDescriptorLearning-Pytorch)
+
+[Dense Depth Estimation in Monocular Endoscopy with Self-supervised Learning Methods (TMI 2020)](https://github.com/lppllppl920/EndoscopyDepthEstimation-Pytorch)
