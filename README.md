@@ -1,6 +1,6 @@
 # Neighborhood Normalization for Robust Geometric Feature Learning
 
-![](pictures/bnhn.png)
+<img src="https://user-images.githubusercontent.com/10382126/154413903-2bae50d3-9f17-4570-b301-7e57efc446b8.png" width="640">
 
 This codebase implements the method described in the paper:
 
@@ -111,15 +111,15 @@ are reduced to 3-dimension for color display using UMAP.
 
 ### 3DMatch
 
-![](pictures/3dmatch_feature.png)
+<img src="pictures/3dmatch_feature.png" width="480">
 
 ### KITTI
 
-![](pictures/kitti_feature.png)
+<img src="pictures/kitti_feature.png" width="480">
 
 ### Nasal Cavity
 
-![](pictures/nasal_feature.png)
+<img src="pictures/nasal_feature.png" width="480">
 
 ## Related Projects
 
