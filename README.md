@@ -101,8 +101,8 @@ below. These models produced experiment results reported in the paper for the B-
 
 | Benchmark / Dataset | 3DMatch | KITTI | Nasal Cavity |
 | ----------- | ----------- | ----------- | ----------- |
-| Standard | [B-NHN + Transpose](https://drive.google.com/file/d/1KMfrKV5U8GRvZakKVkhwsZq7t7JuGB7g/view?usp=sharing) | [B-NHN + Pool](https://drive.google.com/file/d/1haLhw1Mgiw6Rse3yDmzw9YHzdqZawUyr/view?usp=sharing) | N/A |
-| Resolution mismatch | [B-NHN + Pool](https://drive.google.com/file/d/1Vj8bxuoMI-cldGVm-Ph8Lqr_viV9dlq5/view?usp=sharing) | [B-NHN + Pool](https://drive.google.com/file/d/1QfiMLU2ypT7qeMUhvI-RLWaAitXtcyv8/view?usp=sharing) | [B-NHN + Pool](https://drive.google.com/file/d/1679hXaV95Hcg3-zgOBA1B-prbomstgwE/view?usp=sharing) |
+| Standard | [B-NHN + Transpose](https://drive.google.com/file/d/1AyVYSdBW9zveTs9V62J4ELEuFNcdEpsP/view?usp=sharing) | [B-NHN + Pool](https://drive.google.com/file/d/1bn1M6QnOqucmh4MFTFlMZucWFuUTRSyG/view?usp=sharing) | N/A |
+| Resolution mismatch | [B-NHN + Pool](https://drive.google.com/file/d/1WOeMsRYD6qSAY_DfY4Fwe0gGp5EkDPzH/view?usp=sharing) | [B-NHN + Pool](https://drive.google.com/file/d/1OtRjrAJpPhxlk1_7am30yLrTBuWyS3FU/view?usp=sharing) | [B-NHN + Pool](https://drive.google.com/file/d/11S7H4jqaz_2r5VaDTTxD_QX0lK_qKDry/view?usp=sharing) |
 
 ## Visualization
 
